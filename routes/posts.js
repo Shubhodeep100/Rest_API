@@ -63,7 +63,7 @@ router.patch("/:postId", async(req,res) => {
 // Delete a post:
 router.delete("/:postId", async (req, res) => {
     try {
-        const removePost = await Post.remove({ _id: req.params.postId });
+        const removePost = await Post.findByIdAndDelete({ _id: req.params.postId });
         res.json(removePost);
     } catch (err) {
         console.log(err);
