@@ -2,9 +2,9 @@
   "name": "restapi",
   "version": "1.0.0",
   "description": "REST API using MongoDB",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node index.js"
   },
   "author": "Shubhodeep Banerjee",
   "license": "ISC",
